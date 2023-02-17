@@ -26,4 +26,11 @@ fn main(){
   let letra:char = 'C';
   println!("value = {}, tamanho = {} bytes", letra, std::mem::size_of_val(&letra));
 
+  println!("Soma: {}", soma(2, 3));
+
+}
+
+fn soma( a:i32, b:i32) -> i32{
+ println!("{} + {} = {}", a, b, a + b); 
+ a + b //ao omitir o ; o rust entende que é para retornar o valor
 }
