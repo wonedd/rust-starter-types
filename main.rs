@@ -1,4 +1,8 @@
 fn main(){
+
+  const PI:f32 = 3.14;
+  println!("value = {}, tamanho = {} bytes", PI, std::mem::size_of_val(&PI));
+  
   let variable:u8 = 128;
   println!("value = {}, tamanho = {} bytes", variable, std::mem::size_of_val(&variable));
 
